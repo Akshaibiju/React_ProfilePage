@@ -1,4 +1,6 @@
 import React, { Component , router , route , routes } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
+import Downloads from './downloads';
 
 
 class Counter extends Component {
@@ -8,6 +10,18 @@ class Counter extends Component {
      } 
     handleIncriment = () => {
         this.setState({Count: this.state.Count + 1 });
+      };
+      Github = () => {
+        window.open("https://github.com/AkshaiBiju/");
+      };
+      Instagram = () => {
+        window.open("https://www.instagram.com/_fire_fist__ace_/");
+      };
+      Twitter = () => {
+        window.open("https://twitter.com/AkshaiBiju3");
+      };
+      Facebook = () => {
+        window.open("https://www.facebook.com/Akshai.0.0");
       };
 
     render() { 
@@ -24,8 +38,8 @@ class Counter extends Component {
                         </div>
                         <div className="nav-content n3">
                         <a className="projects" href="#projects-i">Projects</a>
-                        <a className="Products" href="#">Products</a>
-                        <a className="Feature" href="#">Feature</a>
+                        <a className="Products" href="#product-i">Products</a>
+                        <a className="Feature" href="#">Downloads</a>
                         </div>
                     </nav>
                     <div className='App-interface'>
@@ -34,10 +48,10 @@ class Counter extends Component {
                             <p>
                             Its Me Akshai Biju
                             </p>
-                            <button className="github-tab bind">Github</button>
-                            <button className="instagram-tab bind">Instagram</button>
-                            <button className="facebook-tab bind">Facebook</button>
-                            <button className="twitter-tab bind">Twitter</button>
+                            <button className="github-tab bind" onClick={this.Github}>Github</button>
+                            <button className="instagram-tab bind" onClick={this.Instagram}>Instagram</button>
+                            <button className="facebook-tab bind" onClick={this.Facebook}>Facebook</button>
+                            <button className="twitter-tab bind" onClick={this.Twitter}>Twitter</button>
                         </header>
 
                         <header className="App-project">
@@ -195,6 +209,20 @@ class Counter extends Component {
                                         <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
                                         </badge>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div className="Project-mini content-my" id='product-i'>
+                                <div className={randomId+13}>
+                                
+                                    <img className='pro-img' src='https://cdn.dribbble.com/users/3041456/screenshots/9170914/__app-_____4x.jpg'/>
+                                    <span className='pr-body'>
+                                        <span className='pr-head'>GLOBAL ARC MESSENGER</span><br />&nbsp;<br />
+                                        GLOBAL ARC MESSENGER is a chatting application which help you to connect with others FAST and EASY<br />&nbsp;<br />&nbsp;<br />
+                                    <span className='free-tag'><img width="24" height="24" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/external-free-shopping-those-icons-fill-those-icons.png" alt="external-free-shopping-those-icons-fill-those-icons"/>FREE</span><br />&nbsp;<br />
+                                    <button className='tryout' id='tryout' >Try it out</button>
+                                    </span>
+                                    
                                 </div>
                             </div>
                     </header>
