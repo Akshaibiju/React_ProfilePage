@@ -1,13 +1,16 @@
-import React, { Component , router , route , routes } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
+import React, { Component , useState }from 'react';
+import { Link, Switch, Redirect } from 'react-router-dom';
 import Downloads from './downloads';
-
+import { Outlet } from "react-router-dom";
+import divider from '../asset/layered-waves-haikei (2).svg';
+import background from '../asset/stacked-steps-haikei.svg';
 
 class Counter extends Component {
     state = { 
         Count: 0,
         id : 0
      } 
+
     handleIncriment = () => {
         this.setState({Count: this.state.Count + 1 });
       };
@@ -24,8 +27,16 @@ class Counter extends Component {
         window.open("https://www.facebook.com/Akshai.0.0");
       };
 
+      Download =  () => {
+        this.context.router.replace('/downloads');
+      }
+
     render() { 
+
+        
+
         let randomId = "content-id "+ "c-"+Math.random().toString(36).substr(2, 9);;
+        
           
         return (
             <div className="App">
@@ -34,14 +45,15 @@ class Counter extends Component {
                         <tag>Akshai Biju</tag>
                         </div>
                         <div className="nav-content n2">
-                        <input className="search" id="search" placeholder="Take A Dive in .."/>
+                        <input className="search" id="search" placeholder="Take A Dive in .." />
                         </div>
                         <div className="nav-content n3">
                         <a className="projects" href="#projects-i">Projects</a>
                         <a className="Products" href="#product-i">Products</a>
-                        <a className="Feature" href="#">Downloads</a>
+                        <Link to="/downloads">Downloads</Link>
                         </div>
                     </nav>
+                    
                     <div className='App-interface'>
                         <header className="App-header">
                             <img src="https://www.neenopal.com/images/saas/dev4.png" className="App-logo" alt="logo" />
@@ -56,12 +68,22 @@ class Counter extends Component {
 
                         <header className="App-project">
                             <div className="Project-mini url">
-                                <span className='discover'>Discover</span>
+                                {/* <span className='discover'>Discover</span>
                                 <div className='discover-content'>
-                                    <div className='content c1'></div>
+                                    <div className='content c1'><img src='https://th.bing.com/th/id/OIP.XvcfWo0lEin33ACFNsriMwAAAA?pid=ImgDet&w=430&h=315&rs=1'/></div>
                                     <div className='content c2'></div>
                                     <div className='content c3'></div>
                                     <div className='content c4'></div>
+                                </div> */}
+
+                                
+                                <div className='Into' >
+                                    <img src='https://www.forextradingtools.eu/wp-content/uploads/2018/01/avataaars-15-283x300.png' className='profile-img'/>
+                                    <h1>Welcome ,<br />
+                                        Its Me AkshaiBiju
+                                    </h1>
+                                    <span className='discription'>Introducing my self a frontent developer and a student<br /> This website is made with React.js and wish you Best Experience</span>
+                                    <img src={divider} className='divider'/>
                                 </div>
                             </div>
 
@@ -224,9 +246,26 @@ class Counter extends Component {
                                     </span>
                                     
                                 </div>
+                                
+                            </div>
+
+                            <div className="Project-mini content-my content-mz" id='product-i'>
+                                <div className={randomId+13}>
+                                
+                                    <img className='pro-img' src='https://i.pinimg.com/originals/61/54/80/6154808ef736363c6a7b682cd8f06ec5.png'/>
+                                    <span className='pr-body'>
+                                        <span className='pr-head'>Fitness Pro</span><br />&nbsp;<br />
+                                        Fintess Pro is a fitness home workout Application which shedules best workout for you according to your fitness<br />&nbsp;<br />&nbsp;<br />
+                                    <span className='free-tag'><img width="24" height="24" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/external-free-shopping-those-icons-fill-those-icons.png" alt="external-free-shopping-those-icons-fill-those-icons"/>FREE</span><br />&nbsp;<br />
+                                    <button className='tryout' id='tryout' >Try it out</button>
+                                    </span>
+                                    
+                                </div>
+                                
                             </div>
                     </header>
                 </div>
+                <Outlet />
         </div>
         );
     }
