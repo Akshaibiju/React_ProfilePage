@@ -2,3 +2,190 @@
     width: 100%;
     height: 100vh;
 }
+.main-download {
+    background-image: url(../asset/violate-glich.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+}
+.down-head {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    font-size: 71px;
+    font-style: oblique;
+    margin-top: 5%;
+}
+.scroll {
+    
+    width: 100%;
+    height: 6%;
+    position: relative;
+    object-fit: contain;
+    top: -19rem;
+
+}
+.code-1 {
+    display: grid !important;
+}
+.products-download {
+    width: 100%;
+    height: fit-content;
+    background: #560090;
+    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+}
+.product-item {
+    width: 307px;
+    height: fit-content;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    background: #140021;
+    border-radius: 10px;
+}
+.product-item img {
+    width: 100%;
+    height: 225px;
+}
+.product-item span {
+    width: 100%;
+    height: 133px;
+    display: block;
+}
+.product-detail a {
+    color: #9900ff;
+    text-decoration: none;
+}
+.product-head {
+    font-size: 205%;
+    font-family: 'AkRegular';
+    text-align: center;
+    font-style: normal;
+}
+.product-detail button {
+    border: none;
+    padding: 11px;
+    border-radius: 5px;
+    color: #9900ff;
+    background: transparent;
+    margin: 22px;
+    text-align: center;
+    font-size: 110%;
+    font-family: 'AkRegular';
+    font-style: normal;
+}
+.product-detail button:hover {
+    outline: 1px solid #9900ff;
+}
+
+
+@media (max-width: 1277.9px) {
+    .products-download {
+        width: 100%;
+        height: fit-content;
+        background: #560090;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    }
+    .product-item {
+        width: 235px;
+    }
+    .product-detail button {
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        color: #9900ff;
+        background: transparent;
+        margin: 15px;
+        text-align: center;
+        font-size: 70%;
+        font-family: 'AkRegular';
+        font-style: normal;
+    }
+}
+@media (max-width: 1037.9px) {
+    .products-download {
+        width: 100%;
+        height: fit-content;
+        background: #560090;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    }
+    .product-item {
+        width: 188px;
+    }
+}
+@media (max-width: 899.9px) {
+    .products-download {
+        width: 100%;
+        height: fit-content;
+        background: #560090;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    }
+    .product-item {
+        width: 143px;
+        height: 332px;
+    }
+    .product-head {
+        font-size: 99%;
+        font-family: 'AkRegular';
+        text-align: center;
+        font-style: normal;
+    }
+    .product-item img {
+        width: 100%;
+        height: 150px;
+    }
+    .product-item span {
+        width: 100%;
+        height: 31px;
+        display: block;
+        font-size: 82%;
+    }
+}
+
+@media (max-width: 612.9px) {
+    .down-head {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        display: grid;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 60%;
+        font-size: 25px;
+        font-style: oblique;
+        margin-top: 5%;
+    }
+    .scroll {
+        width: 100%;
+        height: 6%;
+        position: relative;
+        object-fit: contain;
+        top: 3rem;
+    }
+}

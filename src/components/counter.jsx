@@ -242,7 +242,7 @@ class Counter extends Component {
                                         <span className='pr-head'>GLOBAL ARC MESSENGER</span><br />&nbsp;<br />
                                         GLOBAL ARC MESSENGER is a chatting application which help you to connect with others FAST and EASY<br />&nbsp;<br />&nbsp;<br />
                                     <span className='free-tag'><img width="24" height="24" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/external-free-shopping-those-icons-fill-those-icons.png" alt="external-free-shopping-those-icons-fill-those-icons"/>FREE</span><br />&nbsp;<br />
-                                    <button className='tryout' id='tryout' >Try it out</button>
+                                    <button className='tryout' id='tryout' ><Link to="/downloads">Try it out</Link></button>
                                     </span>
                                     
                                 </div>
@@ -257,7 +257,7 @@ class Counter extends Component {
                                         <span className='pr-head'>Fitness Pro</span><br />&nbsp;<br />
                                         Fintess Pro is a fitness home workout Application which shedules best workout for you according to your fitness<br />&nbsp;<br />&nbsp;<br />
                                     <span className='free-tag'><img width="24" height="24" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/external-free-shopping-those-icons-fill-those-icons.png" alt="external-free-shopping-those-icons-fill-those-icons"/>FREE</span><br />&nbsp;<br />
-                                    <button className='tryout' id='tryout' >Try it out</button>
+                                    <button className='tryout' id='tryout'><Link to="/downloads">Try it out</Link></button>
                                     </span>
                                     
                                 </div>
