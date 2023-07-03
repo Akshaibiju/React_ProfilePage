@@ -76,7 +76,7 @@ class Downloads extends Component {
                             <div className='product-item'>
                                 
                                 <div className='product-img'>
-                                    <img src='https://th.bing.com/th/id/OIP.2Q5wKtPIOsYwNKV0htnhXQAAAA?pid=ImgDet&rs=1' className='img-responsive img-1'/>
+                                    <img src='https://th.bing.com/th/id/OIP.lFZ3_v6g7Nponv2ZcsqZrgAAAA?pid=ImgDet&rs=1' className='img-responsive img-1'/>
                                 </div>
                                 <div className='product-name'>
                                     <span className='product-head'>Profile</span>

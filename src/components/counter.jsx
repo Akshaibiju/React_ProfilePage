@@ -4,6 +4,7 @@ import Downloads from './downloads';
 import { Outlet } from "react-router-dom";
 import divider from '../asset/layered-waves-haikei (2).svg';
 import background from '../asset/stacked-steps-haikei.svg';
+import './appduty';
 
 class Counter extends Component {
     state = { 
@@ -29,11 +30,65 @@ class Counter extends Component {
 
       Download =  () => {
         this.context.router.replace('/downloads');
-      }
+      };
+      githubprojects = (url) => {
+        window.open(url);
+    };
+    urllink = [
+        "https://github.com/Akshaibiju/amazone",
+        "https://github.com/Akshaibiju/React_ProfilePage",
+        "https://github.com/Akshaibiju/LandingPage",
+        "https://github.com/Akshaibiju/Profile-Apk",
+        "https://github.com/DELTA-ORB/GLOBAL-ARC",
+        "https://github.com/DELTA-ORB/CALCULATOR",
+        "https://github.com/Akshaibiju/Python-Voice-Assistant",
+        "https://github.com/Akshaibiju/ShoppingPage",
+        "https://github.com/Akshaibiju/YT-Downloader",
+        "https://github.com/Akshaibiju/Google.com",
+        "https://github.com/Akshaibiju/Twitter",
+        "https://github.com/Akshaibiju/custom_coding_theme_BrowserHome"
+    ]
 
-    render() { 
+    pack1 = () => {
+        this.githubprojects(this.urllink[0]);
+    };
+    pack2 = () => {
+        this.githubprojects(this.urllink[1]);
+    };
+    pack3 = () => {
+        this.githubprojects(this.urllink[2]);
+    };
+    pack4 = () => {
+        this.githubprojects(this.urllink[3]);
+    };
+    pack5 = () => {
+        this.githubprojects(this.urllink[4]);
+    };
+    pack6 = () => {
+        this.githubprojects(this.urllink[5]);
+    };
+    pack7 = () => {
+        this.githubprojects(this.urllink[6]);
+    };
+    pack8 = () => {
+        this.githubprojects(this.urllink[7]);
+    };
+    pack9 = () => {
+        this.githubprojects(this.urllink[8]);
+    };
+    pack10 = () => {
+        this.githubprojects(this.urllink[9]);
+    };
+    pack11 = () => {
+        this.githubprojects(this.urllink[10]);
+    };
+    pack12 = () => {
+        this.githubprojects(this.urllink[11]);
+    };
 
-        
+      
+
+    render() {
 
         let randomId = "content-id "+ "c-"+Math.random().toString(36).substr(2, 9);;
         
@@ -91,7 +146,7 @@ class Counter extends Component {
 
                            
                             <div className="Project-mini content-mx" id='projects-i'>
-                                <div className={randomId+1} >
+                                <div className={randomId+1} id='amazonebox' onClick={this.pack1}>
                                     <span className='pr-head'>Amazone Web Application</span>
                                     <img src='https://i.pinimg.com/736x/12/f6/97/12f697f4e7baca40fea6dd7bd596731f.jpg' className='pr-img'/>
                                     <div className='pr-badge'>
@@ -100,10 +155,11 @@ class Counter extends Component {
                                         <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
                                         <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-shadow-tal-revivo.png" alt="external-jquery-is-a-javascript-library-designed-to-simplify-html-logo-shadow-tal-revivo"/>
                                         <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
+                                        {/* <a className='btn-a aclass' id='1'>Visit</a> */}
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+2} >
+                                <div className={randomId+2} onClick={this.pack2}>
                                 <span className='pr-head'>Profile Web Application</span>
                                     <img src='https://i.pinimg.com/736x/4d/27/a0/4d27a0aaad240d51ab037dbb0e994e96.jpg' className='pr-img'/>
                                     <div className='pr-badge'>
@@ -113,10 +169,11 @@ class Counter extends Component {
                                         <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
                                         <img width="48" height="48" src="https://img.icons8.com/color/48/react-native.png" alt="react-native"/>
                                         <img width="16" height="16" src="https://img.icons8.com/small/16/nodejs.png" alt="nodejs"/>
+                                        {/* <a className='btn-a aclass' id='2'>Visit</a> */}
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+3} >
+                                <div className={randomId+3} onClick={this.pack3}>
                                 <span className='pr-head'>Landing website</span>
                                     <img src='https://cdn.dribbble.com/users/2236928/screenshots/5855314/saas_landing_page.jpg' className='pr-img'/>
                                     <div className='pr-badge'>
@@ -128,7 +185,7 @@ class Counter extends Component {
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+4} >
+                                <div className={randomId+4} onClick={this.pack4} >
                                     <span className='pr-head'>Profile Mobile Application</span>
                                     <img src='https://tse1.mm.bing.net/th?id=OIP.6vHT-IpTPkgDXcey1Z0GnAAAAA&pid=ImgDet&rs=1' className='pr-img'/>
                                     <div className='pr-badge'>
@@ -138,7 +195,7 @@ class Counter extends Component {
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+5} >
+                                <div className={randomId+5} onClick={this.pack5} >
                                 <span className='pr-head'>Chatting Mobile Application</span>
                                     <img src='https://i.pinimg.com/originals/38/2f/5f/382f5fc785c002bd9f4f513dfdfbc3a3.jpg' className='pr-img'/>
                                     <div className='pr-badge'>
@@ -150,7 +207,7 @@ class Counter extends Component {
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+6} >
+                                <div className={randomId+6} onClick={this.pack6} >
                                 <span className='pr-head'>Calculator Mobile Application</span>
                                     <img src='https://cdn.dribbble.com/users/2583563/screenshots/5329997/calculator.jpg' className='pr-img'/>
                                     <div className='pr-badge'>
@@ -163,7 +220,7 @@ class Counter extends Component {
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+7} >
+                                <div className={randomId+7} onClick={this.pack7} >
                                 <span className='pr-head'>Python Voice Assistant</span>
                                     <img src='https://tse3.mm.bing.net/th?id=OIP.lpU8sQbAXs-ova7EVVrtfwHaFj&pid=ImgDet&w=768&h=576&rs=1' className='pr-img'/>
                                     <div className='pr-badge'>
@@ -172,7 +229,7 @@ class Counter extends Component {
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+8} >
+                                <div className={randomId+8} onClick={this.pack8} >
                                 <span className='pr-head'>Shopping WebPages</span>
                                     <img src='https://static.vecteezy.com/system/resources/previews/000/518/577/original/modern-flat-web-page-design-template-concept-of-online-shopping-decorated-people-character-for-website-and-mobile-website-development-flat-landing-page-template-vector-illustration.jpg' className='pr-img'/>
                                     <div className='pr-badge'>
@@ -184,7 +241,7 @@ class Counter extends Component {
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+9} >
+                                <div className={randomId+9} onClick={this.pack9} >
                                 <span className='pr-head'>Youtube Video Downloader Web</span>
                                 <img src='https://stileex.xyz/wp-content/uploads/2019/06/download-youtube-video-youtubnow1-450x323.png' className='pr-img p-sp'/>
                                     <div className='pr-badge'>
@@ -196,7 +253,7 @@ class Counter extends Component {
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+10} >
+                                <div className={randomId+10} onClick={this.pack10} >
                                 <span className='pr-head'>Google Webpage</span>
                                 <img src='https://th.bing.com/th/id/R.e875cb097b2ff521ad166d76ea5ab64a?rik=592R4kVChH0KaA&riu=http%3a%2f%2flongislandeoc.org%2fwp-content%2fuploads%2f2020%2f03%2fdevices1-1024x673.png&ehk=6yKMLG262hqaCnoDfxLrzmCgpFseGQY1vc%2b9RqWrC9M%3d&risl=&pid=ImgRaw&r=0' className='pr-img p-sp'/>
                                     <div className='pr-badge'>
@@ -208,7 +265,7 @@ class Counter extends Component {
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+11} >
+                                <div className={randomId+11} onClick={this.pack11} >
                                 <span className='pr-head'>Twitter Webpage</span>
                                 <img src='https://techcrunch.com/wp-content/uploads/2019/07/Twitter-Web-Light2.png?w=620' className='pr-img p-sp'/>
                                     <div className='pr-badge'>
@@ -220,7 +277,7 @@ class Counter extends Component {
                                         </badge>
                                     </div>
                                 </div>
-                                <div className={randomId+12} >
+                                <div className={randomId+12} onClick={this.pack12} >
                                 <span className='pr-head'>custom chrome Homepage</span>
                                 <img src='https://lh3.googleusercontent.com/MB8QVmMfL4U7_l764IMZ9FrtjxuUnR145KNrmvh_MOzideKtQitxJ6ylXgCifmh7EEZ9nFvH4w=w1280-h800-e365' className='pr-img p-sp'/>
                                     <div className='pr-badge'>
@@ -266,6 +323,7 @@ class Counter extends Component {
                     </header>
                 </div>
                 <Outlet />
+                <script async type="text/javascript" defer src="./appduty.js"></script>
         </div>
         );
     }

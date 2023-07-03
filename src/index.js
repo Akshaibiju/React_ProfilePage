@@ -7,6 +7,7 @@ import Counter from './components/counter';
 import Login from './components/login';
 import Downloads from './components/downloads';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './components/appduty';
 
 
 export default function Application() {
